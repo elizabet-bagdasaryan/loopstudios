@@ -1,0 +1,400 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+.background-section {
+  background-image: url(./img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -20px;
+  padding-bottom: 300px;
+}
+#desktop {
+  display: none;
+}
+header {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+header h2 {
+  font-size: 36px;
+}
+header img {
+  height: 22px;
+  margin-top: 40px;
+}
+
+#immersive {
+  color: white;
+  font-size: 35px;
+  text-transform: uppercase;
+  width: 240px;
+  margin-left: 25px;
+  padding: 20px;
+  border: 2px solid white;
+}
+.vr {
+  margin: 40px 25px;
+  text-align: center;
+}
+.vr img {
+  width: 100%;
+  margin: auto;
+  margin: 50px 0;
+  display: block;
+}
+
+.vr h3 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 32px;
+  width: 300px;
+  margin: auto;
+}
+
+.vr p {
+  opacity: 49%;
+  font-size: 15px;
+  margin: auto;
+  padding-top: 20px;
+  font-weight: 600;
+  width: 300px;
+  line-height: 25px;
+}
+
+.creations {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 100px;
+}
+.creations button {
+  display: none;
+}
+
+.images {
+  position: relative;
+}
+.images div {
+  margin: 25px;
+}
+
+.images img {
+  width: 100%;
+  margin: auto;
+
+  display: block;
+}
+.images p {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  width: 130px;
+  margin-top: -65px;
+  padding: 0 15px;
+}
+#grid {
+  width: 50px;
+}
+#see {
+  margin: auto;
+  background-color: white;
+  display: flex;
+  border: 1px solid black;
+  padding: 10px 40px;
+  font-weight: 600;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  margin-top: 100px;
+}
+footer p {
+  font-size: 15px;
+}
+footer h2 {
+  font-size: 33px;
+}
+
+footer span {
+  opacity: 50%;
+  font-size: 15px;
+}
+.logos {
+  margin: 48px 0 20px 0;
+}
+.logos img {
+  width: 25px;
+  height: 20px;
+  margin: 0 4px;
+}
+#navbar {
+  display: none;
+}
+.active {
+  display: none;
+}
+.visible {
+  display: block;
+  color: white;
+  background-color: black;
+  height: 100vh;
+  padding: 40px 35px;
+}
+.visible div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}
+.visible img {
+  height: 20px;
+  width: 20px;
+  margin-top: 50px;
+}
+.visible p {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+.visible h2 {
+  font-size: 40px;
+}
+@media screen and (min-width: 768px) {
+  header img {
+    display: none;
+  }
+  #mobile {
+    display: none;
+  }
+  #desktop {
+    display: block;
+  }
+  #navbar {
+    display: flex;
+    margin-top: 42px;
+  }
+  #navbar p {
+    margin: 0 10px;
+    background-image: linear-gradient(white, white);
+    background-size: 0 2px, auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.2s ease-out;
+  }
+  #navbar p:hover {
+    background-size: 100% 1px, auto;
+    cursor: pointer;
+  }
+  .background-section {
+    padding: 50px 100px 200px 100px;
+  }
+  #immersive {
+    width: 400px;
+    font-size: 48px;
+    line-height: 60px;
+    padding: 40px;
+  }
+  .vr img {
+    width: 50%;
+
+    margin-left: 8vw;
+  }
+  .vr {
+    position: relative;
+    margin-bottom: 300px;
+  }
+  .immersive-texts {
+    position: absolute;
+    margin-top: -25vw;
+    margin-left: 46vw;
+    background-color: white;
+    padding: 7vw;
+    text-align: start;
+  }
+  .vr h3 {
+    font-size: 3vw;
+    width: 100%;
+  }
+  .vr p {
+    width: 100%;
+  }
+
+  .creations button {
+    display: block;
+    background-color: white;
+    display: flex;
+    border: 1px solid black;
+    padding: 12px 40px 0;
+    font-weight: 600;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    height: 40px;
+    margin-top: 30px;
+  }
+
+  .creations button:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+  }
+  .creations {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 110px;
+  }
+  #see {
+    display: none;
+  }
+  footer {
+    display: flex;
+    padding: 90px;
+    justify-content: space-between;
+  }
+  footer h2 {
+    margin-left: -150px;
+  }
+  #navbar-footer {
+    display: flex;
+  }
+  #navbar-footer p {
+    margin: 0 10px;
+    background-image: linear-gradient(white, white);
+    background-size: 0 2px, auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 5px;
+    transition: all 0.2s ease-out;
+  }
+  #navbar-footer p:hover {
+    background-size: 100% 1px, auto;
+    cursor: pointer;
+  }
+  .logos {
+    margin-left: 80px;
+  }
+  .logos img {
+    margin: 0 10px;
+    background-image: linear-gradient(white, white);
+    background-size: 0 2px, auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 8px;
+    transition: all 0.2s ease-out;
+  }
+  .logos img:hover {
+    background-size: 100% 2px, auto;
+    cursor: pointer;
+  }
+
+  .earth:hover img {
+    opacity: 0.3;
+    cursor: pointer;
+  }
+  .earth:hover p {
+    color: black;
+    cursor: pointer;
+  }
+  .arcade:hover img {
+    opacity: 0.3;
+    cursor: pointer;
+  }
+  .arcade:hover p {
+    color: black;
+    cursor: pointer;
+  }
+  .soccer:hover img {
+    opacity: 0.3;
+    cursor: pointer;
+  }
+  .soccer:hover p {
+    color: black;
+    cursor: pointer;
+  }
+  .grid:hover img {
+    opacity: 0.3;
+    cursor: pointer;
+  }
+  .grid:hover p {
+    color: black;
+    cursor: pointer;
+  }
+  .above:hover img {
+    opacity: 0.3;
+    cursor: pointer;
+  }
+  .above:hover p {
+    color: black;
+    cursor: pointer;
+  }
+  .pocket:hover img {
+    opacity: 0.3;
+    cursor: pointer;
+  }
+  .pocket:hover p {
+    color: black;
+    cursor: pointer;
+  }
+  .curiosity:hover img {
+    opacity: 0.3;
+    cursor: pointer;
+  }
+  .curiosity:hover p {
+    color: black;
+    cursor: pointer;
+  }
+  .fisheye:hover img {
+    opacity: 0.3;
+    cursor: pointer;
+  }
+  .fisheye:hover p {
+    color: black;
+    cursor: pointer;
+  }
+
+  .images {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "earth arcade soccer grid"
+      "above pocket curiosity fisheye";
+  }
+  .earth {
+    grid-area: earth;
+  }
+  .arcade {
+    grid-area: arcade;
+  }
+  .soccer {
+    grid-area: soccer;
+  }
+  .grid {
+    grid-area: grid;
+  }
+  .above {
+    grid-area: above;
+  }
+  .pocket {
+    grid-area: pocket;
+  }
+  .curiosity {
+    grid-area: curiosity;
+  }
+  .fisheye {
+    grid-area: fisheye;
+  }
+}
